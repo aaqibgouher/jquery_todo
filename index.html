@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aaqib Gouher | Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        <!--used because , as screen size will change ,it will automatically adjust its body !-->
+        <title>JQuerry To Do's</title>
 
         <!-- css -->
         <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,22 +14,22 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <h2>To Do <span class="badge pull-right" id="todo_count">0</span></h2>
+                <div class="col-md-4 col-md-offset-4">      <!--we have taken 4 col and we have left first starting 4 rows-->
+                    <h2>To Do <span class="badge pull-right" id="todo_count">0</span></h2>      <!--span is used to continue in same line, at starting we have initialised it to 0.-->
                     <form id="todo_form">
                         <div class="form-group">
-                            <input class="form-control" id="todo_input" type="text" placeholder="Enter task" autofocus>
+                            <input class="form-control" id="todo_input" type="text" placeholder="Enter task" autofocus>     <!--have given class, id, type and placeholder.here autofocus is used because when we will open it , our cursor will be automatically there !-->
                         </div>
-                        <button class="btn btn-success btn-block" id="todo_btn">Add Todo</button>
+                        <button class="btn btn-success btn-block" id="todo_btn">Add Todo</button>       <!--In btn, we have given class, id.-->
                     </form>
                     <br>
-                    <ul class="list-group" id="todo_list"></ul>
+                    <ul class="list-group" id="todo_list"></ul>     <!--Ul : have used here because whatever we will add , be a list only.We have given class and id to it !.So at starting there is no any todos, so there is no li tag.we will add it dynamically.-->
                 </div>
             </div>
         </div>
 
-        <script src="plugins/jquery/jquery.min.js"></script>
-        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/app.js"></script>
+        <script src="plugins/jquery/jquery.min.js"></script>        <!--added jquery file path-->
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>   <!--added bootstrap file paath-->
+        <script src="js/app.js"></script>       <!--added js path-->
     </body>
 </html>
